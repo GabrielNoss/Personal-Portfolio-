@@ -1,0 +1,188 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Caveat', sans-serif;
+    font-size: 16px; /*10px = 1rem */
+}
+h1 {
+    font-size: 4.1rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h1, h2, h3, p, footer, li {
+    text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: .5rem 0;
+  border-bottom: 1px solid black;
+  font-size: 1.7rem;
+}
+li:last-child {
+  border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.bg-white {
+    background-color: white;
+    border: 3px solid black;
+    
+}
+
+/*Header*/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 2rem 3rem;    
+}
+.c-grey {
+    font-size: 2rem;
+    color: grey;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        gap: 2rem;
+        margin-right: 3rem;
+    }
+}
+.name {
+    border-bottom: 2px solid black;
+}
+.name h2 {
+    margin-top: 1rem;
+}
+
+/*Grid 3 colums only Desktop*/
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Projects*/
+.projects {
+    border: 1px solid black;
+}
+.projects h3 {
+    margin: 1rem 0;
+}
+.projects ul {
+    margin: 2rem 0;
+}
+.projects ul li {
+    margin: 2rem 0;
+}
+/*Experience Section*/
+
+.experience {
+    border: 1px solid black;
+}
+.experience h3 {
+    margin: 1rem 0;
+}
+
+.experience h4,
+.experience p,
+.experience a  {
+    margin: 1rem 2rem;
+}
+.experience p {
+    text-align: left;
+    font-size: 1.8rem;
+}
+.experience a {
+    color: blue;
+    font-size: 1.8rem;
+}
+
+.experience .experience__article-1 {
+    border-bottom: 2px solid black;
+    padding: .8rem 0;
+}
+.experience__article-2 {
+    padding: 1.8rem 0;
+}
+
+/*Education*/
+.education {
+    border: 1px solid black;
+}
+.education h3 {
+    margin: 1rem 0;
+}
+.education ul {
+    margin: 2rem 0;
+}
+.education ul li {
+    margin: 1rem;
+}
+
+/*Reviews*/
+.reviews h3 {
+    text-align: left;
+    margin: 2rem 3rem;
+}
+
+blockquote {
+    border: 1px solid black;
+    border-radius: 1.1rem;
+    margin: .5rem 2rem;
+    padding: 1rem;
+}
+
+blockquote p,
+blockquote footer {
+    text-align: left;
+    margin: 0 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+blockquote footer {
+    color: green;
+}
+/*Footer*/
+footer {
+    padding: 8rem 0;
+}
+footer p {
+    font-size: 2.5rem;
+}
